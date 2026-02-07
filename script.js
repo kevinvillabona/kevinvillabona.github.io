@@ -11,10 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function renderContent(data) {
     // --- HERO & AVATAR ---
+    const avatar = data.profile.avatar;
+    const randomAvatar = avatar[Math.floor(Math.random() * avatar.length)];
+
     const heroHTML = `
         <div class="hero-wrapper" data-aos="zoom-in" data-aos-duration="1000">
             <div class="avatar-container">
-                <img src="${data.profile.avatar}" alt="${data.profile.name}" class="avatar-img">
+                <img src="${randomAvatar}" alt="Avatar de ${data.profile.name}" class="avatar-img">
             </div>
             <h1 class="hero-name">${data.profile.name.replace(' ', '<br>')}</h1>
             <div class="hero-badges">

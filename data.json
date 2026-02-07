@@ -5,7 +5,7 @@
     "email": "kevinvillabona@gmail.com",
     "linkedin": "https://linkedin.com/in/kevinvillabona",
     "github": "https://github.com/kevinvillabona",
-    "avatar": "https://placehold.co/400x400/1a1a1a/FFF?text=KV",
+    "avatar": ["images/final_1.png", "images/final_2.png"],
     "summary": "Líder Técnico y Desarrollador de software especializado en diseño de arquitecturas .NET y optimización de procesos. Lidero equipos técnicos definiendo estrategias y asegurando objetivos de negocio. Experiencia dual en sector privado y defensa, gestionando proyectos críticos bajo presión. Actualmente finalizando Licenciatura en Ciencia de Datos, integrando análisis predictivo al desarrollo.",
     "contact_text": "Estoy disponible para establecer contacto y evaluar oportunidades profesionales."
   },
@@ -13,7 +13,7 @@
     {
       "company": "Libercam",
       "location": "CABA, Argentina",
-      "logo": "https://placehold.co/100x100/cc0000/FFF?text=L",
+      "logo": "images/logo-libercam.png",
       "roles": [
         {
           "title": "Líder Técnico",
@@ -47,7 +47,7 @@
     {
       "company": "Armada Argentina",
       "location": "CABA, Argentina",
-      "logo": "https://placehold.co/100x100/1a1a1a/FFF?text=A",
+      "logo": "images/logo-armada.png",
       "roles": [
         {
           "title": "Desarrollador de Software",
@@ -66,24 +66,24 @@
       "degree": "Licenciatura en Ciencia de Datos",
       "institution": "Universidad del Gran Rosario",
       "status": "Finalización estimada 2026",
-      "logo": "https://placehold.co/80x80/cc0000/FFF?text=UGR"
+      "logo": "https://yt3.googleusercontent.com/rDB22dqHGLbCqJFss4cSpIFpbzF4y16EplMPcpPL8DeHzjGNGk2bRvapeKuQvPahCdiarmxT=s900-c-k-c0x00ffffff-no-rj"
     },
     {
       "degree": "Tecnicatura Superior en Programación",
       "institution": "Teclab Instituto Técnico Superior",
       "status": "2022 - 2024",
-      "logo": "https://placehold.co/80x80/555/FFF?text=T"
+      "logo": "https://scontent.flpg2-1.fna.fbcdn.net/v/t39.30808-6/300392182_465415048931372_246089175730291672_n.png?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=YNNQ5yUEeMsQ7kNvwEUMoAV&_nc_oc=AdnqemRf-fGazrApBEbcKZLlx58BSfvBXk_fPiqdE3wklf5zlnbl3IRQr16oDu0het4&_nc_zt=23&_nc_ht=scontent.flpg2-1.fna&_nc_gid=t7x_ab_YLuAsUwEJ_Jg4AA&oh=00_Afs8Hoj8dfuM2EpAKLeUU_K9Z8lRvQlVSBwoEpgZEw-9yw&oe=698D813F"
     },
     {
       "degree": "Licenciatura en Sistemas",
       "institution": "UNLP",
       "status": "2015 - 2018 (Incompleto)",
-      "logo": "https://placehold.co/80x80/555/FFF?text=UNLP"
+      "logo": "https://scontent.flpg3-1.fna.fbcdn.net/v/t39.30808-6/306555859_523519743107152_173605731284464799_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=dV_nQkvUUawQ7kNvwEI8KAu&_nc_oc=AdlVb3sVoLQEadvFtrjyccdtP46nA5Q4ZvhQbm3csqygD0CJCJcUJ2Hdj9oPYmd7yek&_nc_zt=23&_nc_ht=scontent.flpg3-1.fna&_nc_gid=zoFggLpp_gA5QFTyq_qJsQ&oh=00_Aft-l-fXXc83jYF8MfFKkhC_OzTQ2Gj-Fvuyv6SBPVikJQ&oe=698DA8C6"
     }
   ],
   "skills": [
-    { "name": "C# / .NET Core", "icon": "devicon-csharp-plain" },
-    { "name": "ASP.NET", "icon": "devicon-dotnetcore-plain" },
+    { "name": "C# / .NET", "icon": "devicon-csharp-plain" },
+    { "name": "ASP.NET Core / Framework", "icon": "devicon-dotnetcore-plain" },
     { "name": "SQL Server", "icon": "devicon-microsoftsqlserver-plain" },
     { "name": "JavaScript / JQuery", "icon": "devicon-javascript-plain" },
     { "name": "Bootstrap", "icon": "devicon-bootstrap-plain" },
