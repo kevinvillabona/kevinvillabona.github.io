@@ -6,8 +6,8 @@
     "linkedin": "https://linkedin.com/in/kevinvillabona",
     "github": "https://github.com/kevinvillabona",
     "avatar": "https://placehold.co/400x400/1a1a1a/FFF?text=KV",
-    "summary": "Líder Técnico y Desarrollador Senior especializado en diseño de arquitecturas .NET y optimización de procesos. Lidero equipos técnicos definiendo estrategias y asegurando objetivos de negocio. Experiencia dual en sector privado y defensa.",
-    "contact_text": "¿Tienes un proyecto en mente o buscas potenciar tu equipo de desarrollo? Estoy disponible para charlar sobre nuevas oportunidades."
+    "summary": "Líder Técnico y Desarrollador de software especializado en diseño de arquitecturas .NET y optimización de procesos. Lidero equipos técnicos definiendo estrategias y asegurando objetivos de negocio. Experiencia dual en sector privado y defensa, gestionando proyectos críticos bajo presión. Actualmente finalizando Licenciatura en Ciencia de Datos, integrando análisis predictivo al desarrollo.",
+    "contact_text": "Estoy disponible para establecer contacto y evaluar oportunidades profesionales."
   },
   "experience": [
     {
@@ -19,24 +19,27 @@
           "title": "Líder Técnico",
           "date": "Nov 2025 - Presente",
           "tasks": [
-            "Definición de arquitectura de software y roadmaps estratégicos.",
-            "Referente técnico final responsable de pases a producción."
+            "Definición de arquitectura de software y roadmaps estratégicos para nuevos módulos.",
+            "Referente técnico final responsable de pases a producción y calidad del código.",
+            "Liderazgo en reingeniería de sistemas y migración de integraciones a procesos ETL.",
+            "Mentoría técnica del equipo y gestión de documentación en Jira."
           ]
         },
         {
           "title": "Jefe de Programadores",
           "date": "May 2025 - Nov 2025",
           "tasks": [
-            "Resolución de tickets de alta prioridad.",
-            "Consultor principal para desafíos técnicos."
+            "Resolución de tickets de alta prioridad garantizando continuidad operativa crítica.",
+            "Consultor principal para desbloquear al equipo operativo en desafíos técnicos.",
+            "Participación activa en procesos de selección de personal técnico."
           ]
         },
         {
           "title": "Desarrollador .NET",
           "date": "Abr 2024 - May 2025",
           "tasks": [
-            "Desarrollo y mantenimiento de ERP corporativo en .NET Core.",
-            "Liderazgo Front-end con C# y JavaScript."
+            "Desarrollo y mantenimiento de ERP corporativo robusto en .NET Core.",
+            "Liderazgo Front-end: Implementación de UI con C#, JavaScript y Bootstrap."
           ]
         }
       ]
@@ -50,8 +53,9 @@
           "title": "Desarrollador de Software",
           "date": "Abr 2021 - Presente",
           "tasks": [
-            "Desarrollo Full Stack (Internet e Intranet) con ASP.NET MVC 5.",
-            "Diseño de componentes reutilizables y estandarización de UI."
+            "Desarrollo Full Stack de aplicaciones web críticas con ASP.NET MVC 5 y C#.",
+            "Diseño de componentes reutilizables y estandarización de interfaces de usuario.",
+            "Documentación técnica y soporte especializado a sistemas de defensa."
           ]
         }
       ]
@@ -61,30 +65,30 @@
     {
       "degree": "Licenciatura en Ciencia de Datos",
       "institution": "Universidad del Gran Rosario",
-      "status": "Finalización 2026",
+      "status": "Finalización estimada 2026",
       "logo": "https://placehold.co/80x80/cc0000/FFF?text=UGR"
     },
     {
-      "degree": "Tecnicatura Sup. en Programación",
-      "institution": "Teclab",
+      "degree": "Tecnicatura Superior en Programación",
+      "institution": "Teclab Instituto Técnico Superior",
       "status": "2022 - 2024",
       "logo": "https://placehold.co/80x80/555/FFF?text=T"
     },
     {
       "degree": "Licenciatura en Sistemas",
       "institution": "UNLP",
-      "status": "Incompleto",
+      "status": "2015 - 2018 (Incompleto)",
       "logo": "https://placehold.co/80x80/555/FFF?text=UNLP"
     }
   ],
   "skills": [
-    { "name": "C#", "icon": "devicon-csharp-plain" },
-    { "name": ".NET Core", "icon": "devicon-dotnetcore-plain" },
+    { "name": "C# / .NET Core", "icon": "devicon-csharp-plain" },
+    { "name": "ASP.NET", "icon": "devicon-dotnetcore-plain" },
     { "name": "SQL Server", "icon": "devicon-microsoftsqlserver-plain" },
-    { "name": "JavaScript", "icon": "devicon-javascript-plain" },
+    { "name": "JavaScript / JQuery", "icon": "devicon-javascript-plain" },
     { "name": "Bootstrap", "icon": "devicon-bootstrap-plain" },
-    { "name": "Jira", "icon": "devicon-jira-plain" },
-    { "name": "Arquitectura", "icon": "fas fa-sitemap" },
-    { "name": "Liderazgo", "icon": "fas fa-users-cog" }
+    { "name": "Jira / Scrum", "icon": "devicon-jira-plain" },
+    { "name": "Arquitectura de Software", "icon": "fas fa-sitemap" },
+    { "name": "Liderazgo Técnico", "icon": "fas fa-users-cog" }
   ]
 }
