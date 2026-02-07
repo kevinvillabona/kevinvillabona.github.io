@@ -9,6 +9,7 @@
     --nav-bg: rgba(253, 252, 251, 0.75);
     --shadow: 0 4px 20px rgba(0,0,0,0.06);
     --border-radius: 12px;
+    --vh: 1vh;
 }
 
 [data-theme="dark"] {
@@ -32,7 +33,7 @@ ul { list-style: none; }
 img { max-width: 100%; display: block; }
 
 /* --- PARTICLES --- */
-#particles-js { position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1; background-color: var(--bg-color); }
+#particles-js { position: fixed; width: 100%; height: calc(var(--vh, 1vh) * 100); top: 0; left: 0; z-index: -1; background-color: var(--bg-color); }
 
 /* --- NAV --- */
 nav { position: fixed; top: 0; width: 100%; background: var(--nav-bg); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid rgba(0,0,0,0.05); padding: 1rem 0; }
@@ -45,8 +46,7 @@ nav { position: fixed; top: 0; width: 100%; background: var(--nav-bg); backdrop-
 .theme-toggle { cursor: pointer; font-size: 1.2rem; color: var(--text-color); background: none; border: none; }
 
 /* --- HERO & AVATAR --- */
-header { position: relative; min-height: 100dvh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 100px 20px 40px; }
-@supports not (min-height: 100dvh) { header { min-height: 100vh; } }
+header { position: relative; min-height: calc(var(--vh, 1vh) * 100); display: flex; align-items: center; justify-content: center; text-align: center; padding: 100px 20px 40px; }
 .hero-wrapper { position: relative; z-index: 2; max-width: 900px; }
 
 .avatar-container {

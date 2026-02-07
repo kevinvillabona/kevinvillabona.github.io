@@ -5,9 +5,26 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Error cargando JSON:', error));
 
     AOS.init({ once: true, offset: 100, duration: 800 });
+    setVh();
     initParticles();
     setupThemeToggle();
+    // update --vh on resize/orientation changes to avoid mobile viewport glitches
+    window.addEventListener('resize', setVh);
+    window.addEventListener('orientationchange', setVh);
+    if (window.visualViewport) visualViewport.addEventListener('resize', setVh);
 });
+
+function setVh() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    // refresh particles and AOS to force visual recalculation
+    if (window.pJSDom && window.pJSDom.length > 0 && window.pJSDom[0].pJS) {
+        try { window.pJSDom[0].pJS.fn.particlesRefresh(); } catch(e){}
+    }
+    if (window.AOS && typeof window.AOS.refresh === 'function') {
+        try { window.AOS.refresh(); } catch(e){}
+    }
+}
 
 function renderContent(data) {
     // --- HERO & AVATAR ---
