@@ -10,6 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function renderContent(data) {
+    // --- NAV: CV DOWNLOAD LINK ---
+    const cvBtn = document.getElementById('download-cv');
+    if (data.profile.cv_file) {
+        cvBtn.href = data.profile.cv_file;
+    } else {
+        cvBtn.style.display = 'none';
+    }
+
     // --- HERO & AVATAR ---
     const avatar = data.profile.avatar;
     const randomAvatar = avatar[Math.floor(Math.random() * avatar.length)];
@@ -43,6 +51,39 @@ function renderContent(data) {
             <p>${data.profile.summary}</p>
         </article>
     `;
+
+    // --- PROYECTOS ---
+    if (data.projects) {
+        let projectsHTML = '<h2 class="section-title" data-aos="fade-right">Proyectos Destacados</h2><div class="projects-grid">';
+        data.projects.forEach((proj, index) => {
+            // Manejo de imagen por defecto si no carga
+            const imgHTML = proj.image ? `<img src="${proj.image}" alt="${proj.title}" onerror="this.style.display='none'">` : '';
+            const linkHTML = proj.link !== "#" 
+                ? `<a href="${proj.link}" target="_blank" class="btn-project">Ver Sitio <i class="fas fa-external-link-alt"></i></a>` 
+                : `<span class="btn-project" style="cursor:default; opacity:0.6;">Sistema Interno <i class="fas fa-lock"></i></span>`;
+
+            projectsHTML += `
+                <div class="project-card" data-aos="fade-up" data-aos-delay="${index * 100}">
+                    <div class="project-image">
+                        ${imgHTML}
+                    </div>
+                    <div class="project-content">
+                        <span class="project-type">${proj.type}</span>
+                        <h3 class="project-title">${proj.title}</h3>
+                        <p class="project-desc">${proj.description}</p>
+                        <div class="project-tags">
+                            ${proj.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                        <div class="project-links">
+                            ${linkHTML}
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+        projectsHTML += '</div>';
+        document.getElementById('projects').innerHTML = projectsHTML;
+    }
 
     // --- EXPERIENCE ---
     let experienceHTML = '<h2 class="section-title" data-aos="fade-right">Experiencia Laboral</h2><div class="timeline">';
@@ -145,28 +186,19 @@ function renderContent(data) {
             </form>
         </div>
     `;
-
-    // --- ENVIO DE CONTACTO ---
+    
     document.getElementById('contactForm').addEventListener('submit', function(e) {
         e.preventDefault();
-        
         const name = document.getElementById('formName').value;
         const message = document.getElementById('formMessage').value;
         const email = document.getElementById('formEmail').value;
-        
         const subject = `Contacto desde Portfolio Web: ${name}`;
         const body = `Hola Kevin,\n\nSoy ${name} (${email}).\n\n${message}`;
-
         window.location.href = `mailto:${data.profile.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
-
-    // --- COPYRIGHT ---
-    document.getElementById('copyright-content').innerHTML = `
-        &copy; ${new Date().getFullYear()} ${data.profile.name}. Todos los derechos reservados.
-    `;
+    document.getElementById('copyright-content').innerHTML = `&copy; ${new Date().getFullYear()} ${data.profile.name}. Todos los derechos reservados.`;
 }
 
-// --- PARTICLES.JS CONFIG ---
 function initParticles() {
     particlesJS("particles-js", {
         "particles": {
@@ -186,18 +218,15 @@ function initParticles() {
         "retina_detect": true
     });
 }
-
 function setupThemeToggle() {
     const toggleBtn = document.getElementById('theme-toggle');
     const icon = toggleBtn.querySelector('i');
     const body = document.body;
-
     if (localStorage.getItem('theme') === 'dark') {
         body.setAttribute('data-theme', 'dark');
         icon.classList.remove('fa-moon'); icon.classList.add('fa-sun');
         updateParticlesColor('#ffffff');
     }
-
     toggleBtn.addEventListener('click', () => {
         if (body.hasAttribute('data-theme')) {
             body.removeAttribute('data-theme');
@@ -212,7 +241,6 @@ function setupThemeToggle() {
         }
     });
 }
-
 function updateParticlesColor(color) {
     if (window.pJSDom && window.pJSDom.length > 0) {
         window.pJSDom[0].pJS.particles.color.value = color;

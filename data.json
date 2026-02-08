@@ -5,6 +5,7 @@
     "email": "kevinvillabona@gmail.com",
     "linkedin": "https://linkedin.com/in/kevinvillabona",
     "github": "https://github.com/kevinvillabona",
+    "cv_file": "docs/CV_Kevin_Villabona.pdf", 
     "avatar": ["images/final_1.png", "images/final_2.png"],
     "summary": "Líder Técnico y Desarrollador de software especializado en diseño de arquitecturas .NET y optimización de procesos. Lidero equipos técnicos definiendo estrategias y asegurando objetivos de negocio. Experiencia dual en sector privado y defensa, gestionando proyectos críticos bajo presión. Actualmente finalizando Licenciatura en Ciencia de Datos, integrando análisis predictivo al desarrollo.",
     "contact_text": "Estoy disponible para establecer contacto y evaluar oportunidades profesionales."
@@ -59,6 +60,32 @@
           ]
         }
       ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "SINU",
+      "description": "Sistema de Inscripción Unificado (SINU) de la Armada Argentina para postulantes interesados en ingresar a diversas modalidades de formación. Mantenimiento correctivo y evolutivo de la plataforma web, soporte de alta disponibilidad, y mejoras continuas.",
+      "tags": ["ASP.NET Framework", "C#", "SQL Server", "Mantenimiento", "Web Dev", "Soporte"],
+      "link": "https://sinu.incorporacion.armada.mil.ar/",
+      "image": "images/captura-sinu.png",
+      "type": "Institucional"
+    },
+    {
+      "title": "COAMAS",
+      "description": "Plataforma institucional del Coordinador del Área Marítima del Atlántico Sur (COAMAS) para gestión de contenido y documentación operativa. Desarrollo full-stack desde cero, mantenimiento evolutivo, y optimización de rendimiento, seguridad y disponibilidad.",
+      "tags": ["ASP.NET Core", "C#", "SQL Server", "Entity Framework", "Bootstrap", "Seguridad"],
+      "link": "https://www.coamas.org/",
+      "image": "images/captura-coamas.png",
+      "type": "Institucional"
+    },
+    {
+      "title": "La Gándara",
+      "description": "Desarrollo web freelance para marca comercial. Enfoque en UX/UI, optimización SEO y performance para maximizar la conversión y presencia de marca.",
+      "tags": ["ASP.NET Framework", "C#", "Freelance", "Frontend", "SEO"],
+      "link": "https://lagandara.com.ar/",
+      "image": "images/captura-lagandara.png",
+      "type": "Comercial"
     }
   ],
   "education": [

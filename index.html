@@ -34,21 +34,26 @@
     <nav>
         <div class="nav-container">
             <div class="nav-logo">KV.</div>
-            <div class="nav-links">
-                <a href="#about">Perfil</a>
-                <a href="#experience">Experiencia</a>
-                <a href="#skills">Habilidades</a>
-                <a href="#education">Educación</a>
-                <a href="#contact">Contacto</a>
+
+            <div class="nav-right-side">
+                <div class="nav-links">
+                    <a href="#about">Perfil</a>
+                    <a href="#projects">Proyectos</a> <a href="#experience">Experiencia</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#contact">Contacto</a>
+                </div>
+
+                <div class="nav-actions">
+                    <a id="download-cv" href="#" download class="btn-download" title="Descargar CV en PDF">
+                        <i class="fas fa-file-download"></i> <span>Descargar CV</span>
+                    </a>
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
             </div>
-            <div class="nav-actions" style="display: flex; align-items: center; gap: 15px;">
-                <a href="docs/kevin-villabona-cv-es.pdf" download class="download-btn">
-                    <i class="fas fa-file-download"></i> Descargar CV
-                </a>
-                <button class="theme-toggle" id="theme-toggle">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </div>
+
+            <!-- <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></button> -->
         </div>
     </nav>
 
@@ -58,9 +63,9 @@
 
     <section id="about"></section>
     <section id="experience"></section>
+    <section id="projects"></section>
     <section id="skills"></section>
     <section id="education"></section>
-
     <section id="contact"></section>
 
     <footer class="copyright">
