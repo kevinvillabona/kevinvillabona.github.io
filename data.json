@@ -86,6 +86,14 @@
       "link": "https://lagandara.com.ar/",
       "image": "images/captura-lagandara.png",
       "type": "Comercial"
+    },
+    {
+      "title": "Internal Project Tracker & Dashboard",
+      "description": "Sistema automatizado de seguimiento de proyectos para equipos de desarrollo. Elimina reportes manuales integrando Google Forms, Sheets y ERP corporativo para visualización en tiempo real de roadmaps.",
+      "tags": ["Process Automation", "Google Sheets", "ETL", "Data", "Team Management"],
+      "link": "https://github.com/kevinvillabona/project-tracker-automation", 
+      "image": "images/captura-dashboard.png",
+      "type": "Herramienta Interna"
     }
   ],
   "education": [
@@ -103,7 +111,7 @@
     },
     {
       "degree": "Licenciatura en Sistemas",
-      "institution": "UNLP",
+      "institution": "Universidad Nacional de La Plata",
       "status": "2015 - 2018 (Incompleto)",
       "logo": "https://scontent.flpg3-1.fna.fbcdn.net/v/t39.30808-6/306555859_523519743107152_173605731284464799_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=dV_nQkvUUawQ7kNvwEI8KAu&_nc_oc=AdlVb3sVoLQEadvFtrjyccdtP46nA5Q4ZvhQbm3csqygD0CJCJcUJ2Hdj9oPYmd7yek&_nc_zt=23&_nc_ht=scontent.flpg3-1.fna&_nc_gid=zoFggLpp_gA5QFTyq_qJsQ&oh=00_Aft-l-fXXc83jYF8MfFKkhC_OzTQ2Gj-Fvuyv6SBPVikJQ&oe=698DA8C6"
     }

@@ -58,9 +58,14 @@ function renderContent(data) {
         data.projects.forEach((proj, index) => {
             // Manejo de imagen por defecto si no carga
             const imgHTML = proj.image ? `<img src="${proj.image}" alt="${proj.title}" onerror="this.style.display='none'">` : '';
-            const linkHTML = proj.link !== "#" 
-                ? `<a href="${proj.link}" target="_blank" class="btn-project">Ver Sitio <i class="fas fa-external-link-alt"></i></a>` 
-                : `<span class="btn-project" style="cursor:default; opacity:0.6;">Sistema Interno <i class="fas fa-lock"></i></span>`;
+            let linkHTML = '';
+            if (proj.link === "#") {
+                linkHTML = `<span class="btn-project" style="cursor:default; opacity:0.6;">Sistema Interno <i class="fas fa-lock"></i></span>`;
+            } else if (proj.link.includes("github.com") || proj.link.includes("gitlab.com")) {
+                linkHTML = `<a href="${proj.link}" target="_blank" class="btn-project">Ver Código <i class="fab fa-github"></i></a>`;
+            } else {
+                linkHTML = `<a href="${proj.link}" target="_blank" class="btn-project">Ver Sitio <i class="fas fa-external-link-alt"></i></a>`;
+            }
 
             projectsHTML += `
                 <div class="project-card" data-aos="fade-up" data-aos-delay="${index * 100}">
