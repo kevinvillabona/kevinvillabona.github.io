@@ -306,6 +306,11 @@ section { padding: 80px 20px; max-width: 1100px; margin: 0 auto; }
 }
 
 /* --- RESPONSIVE --- */
+@media (max-width: 1000px) {
+    nav { 
+        padding: 1rem 5rem; 
+    }
+}
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateX(-50%) translateY(0);}
     40% {transform: translateX(-50%) translateY(-10px);}
@@ -328,9 +333,6 @@ section { padding: 80px 20px; max-width: 1100px; margin: 0 auto; }
     .hero-wrapper {
         width: 100%;
         padding: 0 10px;
-    }
-    nav { 
-        padding: 1rem 5rem; 
     }
     .nav-actions {
         gap: 10px;
